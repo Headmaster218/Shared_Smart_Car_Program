@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Wu Master, Hm, LIC=76F5U-SCGTL-FWC2N-YRE2K-58IHS-MIFYN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Hm-Server\Desktop\f4小车程序\USER\WHEELTEC.uvprojx
+Project File Date:  11/19/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'FreeRTOS'
+compiling machine_arm.c...
+..\HARDWARE\machine_arm.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\machine_arm.c(65): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Arm1.goal_pos[Arm] = angle * 5.333333333333333 + 700 + arm_offset[Arm];
+..\HARDWARE\machine_arm.c(68): warning:  #223-D: function "MIN" declared implicitly
+          Arm1.goal_pos[PAW] = MIN(1000, Arm1.goal_pos[Arm]);
+..\HARDWARE\machine_arm.c(69): warning:  #223-D: function "MAX" declared implicitly
+          Arm1.goal_pos[PAW] = MAX(450, Arm1.goal_pos[Arm]);
+..\HARDWARE\machine_arm.c(73): warning:  #223-D: function "MIN" declared implicitly
+          Arm1.goal_pos[Arm] = MIN(1200, Arm1.goal_pos[Arm]);
+..\HARDWARE\machine_arm.c(74): warning:  #223-D: function "MAX" declared implicitly
+          Arm1.goal_pos[Arm] = MAX(200, Arm1.goal_pos[Arm]);
+..\HARDWARE\machine_arm.c(90): warning:  #188-D: enumerated type mixed with another type
+          Arm_Pos_Set(i, 0);
+..\HARDWARE\machine_arm.c(106): warning:  #223-D: function "GPIO_PinRemapConfig" declared implicitly
+      GPIO_PinRemapConfig(GPIO_PartialRemap_TIM3, ENABLE); // Timer3部分重映射  TIM3_CH2->PB5
+..\HARDWARE\machine_arm.c(106): error:  #20: identifier "GPIO_PartialRemap_TIM3" is undefined
+      GPIO_PinRemapConfig(GPIO_PartialRemap_TIM3, ENABLE); // Timer3部分重映射  TIM3_CH2->PB5
+..\HARDWARE\machine_arm.c(107): error:  #20: identifier "GPIO_Remap_SWJ_NoJTRST" is undefined
+      GPIO_PinRemapConfig(GPIO_Remap_SWJ_NoJTRST, ENABLE);
+..\HARDWARE\machine_arm.c(110): error:  #20: identifier "GPIO_Mode_AF_PP" is undefined
+      GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;                                                            //复用推挽输出
+..\HARDWARE\machine_arm.c: 8 warnings, 3 errors
+compiling main.c...
+..\HARDWARE\machine_arm.h(27): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c: 1 warning, 0 errors
+"..\OBJ\WHEELTEC.axf" - 3 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Hm-Server\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
